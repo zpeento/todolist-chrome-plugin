@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  
+  "name": "Todo List",
+  "description": "todo list",
+  "version": "1.0",
+  "permissions": ["http://*.google.com/", "https://*.google.com/"],
+  "browser_action": {
+    "default_title": "todo list",
+    "default_icon": "images/icon19.png",
+    "default_popup": "popup.html"
+  }
+}

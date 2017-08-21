@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            display: flex;
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            height: 300px;
+            width: 200px;
+            background: #bbb;
+        }
+        .title{
+            display: flex;
+        }
+        .drumstick{
+            display: flex;
+        }
+        .addItemContainer{
+            display: flex;
+        }
+        .addItemContainer input{
+            width: 120px;
+            font-size: 20px;
+            height: 20px;
+            line-height: 20px;
+        }
+        .addItemContainer button{
+            box-sizing: border-box;
+            height: 24px;
+            width: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="title">
+            <!--月日-->
+            <p id="date"></p>
+            <!--星期-->
+            <p id="week"></p>
+            <!--天气-->
+            <!--<p></p>-->
+        </div>
+        <ul id="list">
+            <li>
+                <p>任务一</p>
+                <button>x</button>
+                <button>√</button>
+            </li>
+            <li>
+                <p>任务二</p>
+                <button>x</button>
+                <button>√</button>
+            </li>
+        </ul>
+        <button class="addItem">增加一个计划</button>
+        <div class="addItemContainer">
+            <input type="text">
+            <button>增加</button>
+        </div>
+        <div class="drumstick">
+            <p>鸡腿</p>
+            <span>x</span>
+            <span>77</span>
+        </div>
+        <p>显示曾经的todo list</p>
+    </div>
+    <script src="scripts/main.js"></script>  
+</body>
+</html>
