@@ -59,4 +59,15 @@ window.onload = function() {
         //显示添加计划按钮
         addItemButton.style.display = "block";
     }
+
+    var storage = new Storage();
+    var test = document.querySelector("#test");
+    test.onclick = function() {
+        console.log(0)
+        storage.addOneDrumstick
+    }
+    // test.onclick = function() {
+    //     console.log(0)
+    //     storage.reduceOneDrumstick
+    // }
 }
